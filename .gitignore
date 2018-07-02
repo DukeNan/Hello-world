@@ -1,6 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.sqlite3
 
 
 
 
 # mac系统文件
 .DS_Store
+
+
+# myproject
+*/__pycache__/
+mysite/.idea/*
+mysite/.idea
