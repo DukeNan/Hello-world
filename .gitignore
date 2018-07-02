@@ -16,5 +16,5 @@ __pycache__/
 
 # myproject
 */__pycache__/
-mysite/.idea/*
-mysite/.idea
+*/.idea/*
+*/.idea/
