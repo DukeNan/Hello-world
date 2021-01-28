@@ -17,4 +17,5 @@ jobs:
 
       - name: Install and Build
         run: |
+          python3 -m pip install --upgrade pip
           curl ip-api.com
