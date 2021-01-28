@@ -16,10 +16,9 @@ jobs:
           ref: master
 
       - name: Install and Build
-        run: |
-          python3 -m pip install --upgrade pip
-          sudo apt update -y
-          sudo apt upgrade -y
-          sudo apt install speedtest-cli -y
-          curl ip-api.com
-          speedtest-cli
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: whoami
