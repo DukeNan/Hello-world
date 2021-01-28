@@ -18,6 +18,8 @@ jobs:
       - name: Install and Build
         run: |
           python3 -m pip install --upgrade pip
-          pip3 install speedtest-cli
+          sudo apt update -y
+          sudo apt upgrade -y
+          sudo apt install speedtest-cli -y
           curl ip-api.com
           speedtest-cli
