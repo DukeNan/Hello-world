@@ -17,10 +17,11 @@ jobs:
 
       - name: Install and Build
         uses: appleboy/ssh-action@master
+#        uses: easingthemes/ssh-deploy@v2.1.5
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            whoami
-            pwd
+            cd ${{ secrets.WORK_DIR }}
+            deploy.sh
