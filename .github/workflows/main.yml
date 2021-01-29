@@ -24,4 +24,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             cd ${{ secrets.WORK_DIR }}
-            deploy.sh
+            sh deploy.sh
